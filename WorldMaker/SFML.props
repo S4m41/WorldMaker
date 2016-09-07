@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <SFML-ver>SFML-2.4.0</SFML-ver>
+    <ExternalDir>$(ProjectDir)\External</ExternalDir>
+    <SFMLDir>$(ExternalDir)\$(SFML-ver)</SFMLDir>
+    <SFMLInclude>$(SFMLDir)\include</SFMLInclude>
+    <SFMLLib>$(SFMLDir)\lib</SFMLLib>
+    <SFMLBin>$(SFMLDir)\bin</SFMLBin>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="SFML-ver">
+      <Value>$(SFML-ver)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="ExternalDir">
+      <Value>$(ExternalDir)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="SFMLDir">
+      <Value>$(SFMLDir)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="SFMLInclude">
+      <Value>$(SFMLInclude)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="SFMLLib">
+      <Value>$(SFMLLib)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="SFMLBin">
+      <Value>$(SFMLBin)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
